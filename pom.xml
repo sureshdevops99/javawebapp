@@ -4,12 +4,15 @@
 
   <groupId>com.javawebapp</groupId>
   <artifactId>javawebapp</artifactId>
-  <version>1.0.0</version>
+  <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
   <name>javawebapp</name>
-  <url>http://maven.apache.org</url>
-
+  <properties>
+    <sonar.host.url>http://192.168.19.140:9000/</sonar.host.url>
+	<sonar.login>fee0c80a4506412fa2517ef7fa609a50026373fe</sonar.login>
+  </properties>
+  
   <dependencies>
     <dependency>
       <groupId>javax.servlet</groupId>
@@ -24,6 +27,18 @@
       <scope>provided</scope>
     </dependency>
   </dependencies>
+  <distributionManagement>
+	<repository>
+		<id>nexus</id>
+		<name>walmart release</name>
+		<url>http://192.168.19.139:8081/repository/wallmart-releases/</url>
+	</repository>
+	<snapshotRepository>
+		<id>nexus</id>
+		<name>walmart snapshot</name>
+		<url>http://192.168.19.139:8081/repository/wallmart-snapshots/</url>
+	</snapshotRepository>
+  </distributionManagement>
 
   <build>
     <plugins>
