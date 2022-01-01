@@ -10,7 +10,7 @@
   <name>javawebapp</name>
   <properties>
     <sonar.host.url>http://192.168.19.140:9000/</sonar.host.url>
-	<sonar.login>fee0c80a4506412fa2517ef7fa609a50026373fe</sonar.login>
+	<sonar.login>4ecc409d657ae3114417bd4413e06214b3e2c94b</sonar.login>
   </properties>
   
   <dependencies>
