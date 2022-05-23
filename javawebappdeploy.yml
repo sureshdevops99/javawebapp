@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: javawebappcontainer
-        image: sureshdevops99/javawebapp:${BUILD_NUMBER}
+        image: sureshdevops99/javawebapp:BUILD_TAG
         ports:
           - containerPort: 8080
 ---
